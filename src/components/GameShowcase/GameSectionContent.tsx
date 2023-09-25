@@ -1,13 +1,13 @@
 import { ReactNode } from 'react';
 
-const TextSection = ({ children }: { children: ReactNode }) => {
+const GameSectionContent = ({ children, style }: { children: ReactNode; style: React.CSSProperties }) => {
     return (
         <div
             style={{
                 display: 'flex',
                 flexFlow: 'column nowrap',
-                alignItems: 'center',
-                justifyContent: 'center',
+                padding: '0 2rem',
+                ...style,
             }}
         >
             {children}
@@ -15,4 +15,4 @@ const TextSection = ({ children }: { children: ReactNode }) => {
     );
 };
 
-export default TextSection;
+export default GameSectionContent;

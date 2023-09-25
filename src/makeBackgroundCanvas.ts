@@ -50,7 +50,7 @@ class Tile {
             this._t = Math.max(this._t, 1 - distance / this._detectionRadius);
         }
 
-        ctx.fillStyle = `rgba(23, 23, 23, ${0.3 + (0.8 - 0.3) * this._t})`;
+        ctx.fillStyle = `rgba(23, 23, 23, ${0.3 + (1 - 0.3) * this._t})`;
         ctx.fillRect(x, y, SIZE, SIZE);
     }
 
