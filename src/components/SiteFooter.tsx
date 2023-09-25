@@ -1,3 +1,5 @@
+import './SiteFooter.css';
+
 const SiteFooter = () => {
     return (
         <div
@@ -7,11 +9,14 @@ const SiteFooter = () => {
                 padding: '16px',
                 backgroundColor: '#272727a0',
                 width: '100%',
-                justifyContent: 'space-evenly',
-                color: '#707070',
+                justifyContent: 'center',
+                alignItems: 'center',
             }}
         >
-            Site Footer
+            <a href="https://github.com/NachoToast/FoundationX" id="github-link" target="_blank" title="Source Code">
+                <span>Made by NachoToast</span>
+                <i className="fa-brands fa-github fa-xl" />
+            </a>
         </div>
     );
 };

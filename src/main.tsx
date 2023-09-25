@@ -16,7 +16,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <SiteHeader />
         <GameShowcase />
         <TextShowcase />
-        <div style={{ flexGrow: 1 }} />
         <SiteFooter />
     </React.StrictMode>,
 );

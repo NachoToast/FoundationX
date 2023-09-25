@@ -1,0 +1,19 @@
+a#discord-join-button {
+    color: inherit;
+    text-decoration: inherit;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #7289da;
+    padding: 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    transition: background-color 200ms;
+}
+
+a#discord-join-button:hover {
+    background-color: #424549;
+}

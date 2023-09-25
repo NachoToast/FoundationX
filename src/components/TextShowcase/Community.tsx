@@ -24,7 +24,7 @@ const logos: Logo[] = [
         styles: {
             width: '256px',
             backgroundColor: 'white',
-            padding: '4px',
+            padding: '2px',
             boxSizing: 'border-box',
         },
     },
@@ -62,7 +62,13 @@ const Community = () => {
                         <img
                             src={e.logo}
                             alt={e.name}
-                            style={{ width: '128px', height: '128px', borderRadius: '1em', ...e.styles }}
+                            style={{
+                                width: '128px',
+                                height: '128px',
+                                borderRadius: '2.1em',
+                                backgroundColor: 'white',
+                                ...e.styles,
+                            }}
                         />
                     </a>
                 ))}

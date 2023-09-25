@@ -1,0 +1,14 @@
+a#github-link {
+    color: #707070;
+    text-decoration: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: color 200ms;
+}
+
+a#github-link:hover {
+    color: #ccc;
+}
