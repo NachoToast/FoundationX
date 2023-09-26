@@ -65,7 +65,7 @@ const Community = () => {
                             style={{
                                 width: '128px',
                                 height: '128px',
-                                borderRadius: '2.1em',
+                                borderRadius: '2.2em',
                                 backgroundColor: 'white',
                                 ...e.styles,
                             }}
