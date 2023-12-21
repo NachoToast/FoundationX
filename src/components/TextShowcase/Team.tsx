@@ -1,5 +1,5 @@
 import profileFoundation from '../../assets/team/foundation.png';
-import profileHandsome from '../../assets/team/handsome.png';
+import profileHalfLife from '../../assets/team/half_life.gif';
 import profileMango from '../../assets/team/mango.png';
 import profileVinny from '../../assets/team/vinny.gif';
 import TextSection from './TextSection';
@@ -28,8 +28,8 @@ const management: DiscordUser[] = [
         position: 'Staff Manager',
     },
     {
-        name: 'handsome gamer',
-        avatar: profileHandsome,
+        name: 'Half-Life 2 Scientist',
+        avatar: profileHalfLife,
         position: 'Community Manager',
     },
 ];

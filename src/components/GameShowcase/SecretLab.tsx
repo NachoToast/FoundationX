@@ -3,6 +3,7 @@ import imageA from '../../assets/secretLab/20230925151458_1.jpg';
 import imageB from '../../assets/secretLab/20230925151509_1.jpg';
 import imageC from '../../assets/secretLab/20230925151620_1.jpg';
 import imageD from '../../assets/secretLab/20230925155035_1.jpg';
+import imageI from '../../assets/secretLab/half_life.png';
 import imageG from '../../assets/secretLab/jordy.png';
 import imageF from '../../assets/secretLab/jumpergum.png';
 import imageH from '../../assets/secretLab/jumpergum2.png';
@@ -25,7 +26,10 @@ const SecretLab = () => {
                 <GameSectionInfo>
                     <img src={secretLabLogo} width="128px" />
                 </GameSectionInfo>
-                <ImageSlideshow imagesA={[imageG, imageE, imageA, imageB]} imagesB={[imageH, imageF, imageC, imageD]} />
+                <ImageSlideshow
+                    imagesA={[imageI, imageG, imageE, imageA, imageB]}
+                    imagesB={[imageH, imageF, imageC, imageD]}
+                />
             </GameSectionContent>
         </GameSection>
     );
