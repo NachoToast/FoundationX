@@ -31,6 +31,7 @@ const SecretLab = () => {
                     imagesB={[imageH, imageF, imageC, imageD]}
                 />
             </GameSectionContent>
+            <img src={sectionTop} style={{ width: '100%', height: 'auto', transform: 'scaleY(-1) scaleX(-1)' }} />
         </GameSection>
     );
 };
