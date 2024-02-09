@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 import TextSection from './TextSection';
+import discordLogo from '../../assets/discord/discord-mark-white.svg';
+import patreonLogo from '../../assets/patreon/patreon_symbol_white.svg';
 
 interface JoinButton {
     href: string;
@@ -13,14 +15,14 @@ const buttons: JoinButton[] = [
     {
         href: 'https://www.patreon.com/FoundationX',
         title: 'Patreon',
-        icon: <i className="fa-brands fa-patreon fa-6x"></i>,
+        icon: <img src={patreonLogo} width={100} />,
         backgroundColor: '#f96854',
         color: 'white',
     },
     {
         href: 'https://discord.gg/FoundationX',
         title: 'Discord',
-        icon: <i className="fa-brands fa-discord fa-6x"></i>,
+        icon: <img src={discordLogo} width={100} />,
         backgroundColor: '#7289da',
         color: 'white',
     },
