@@ -1,4 +1,5 @@
 import './SiteFooter.css';
+import githubLogo from '../assets/github/github-mark-white.svg';
 
 const SiteFooter = () => {
     return (
@@ -15,7 +16,7 @@ const SiteFooter = () => {
         >
             <a href="https://github.com/NachoToast/FoundationX" id="github-link" target="_blank" title="Source Code">
                 <span>Made by NachoToast</span>
-                <i className="fa-brands fa-github fa-xl" />
+                <img src={githubLogo} width={23} />
             </a>
         </div>
     );
