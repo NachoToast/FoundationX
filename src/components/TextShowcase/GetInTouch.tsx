@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
-import TextSection from './TextSection';
 import discordLogo from '../../assets/discord/discord-mark-white.svg';
 import patreonLogo from '../../assets/patreon/patreon_symbol_white.svg';
+import TextSection from './TextSection';
 
 interface JoinButton {
     href: string;
