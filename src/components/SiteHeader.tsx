@@ -1,6 +1,6 @@
+import discordLogo from '../assets/discord/discord-mark-white.svg';
 import siteLogo from '../assets/logo.png';
 import './SiteHeader.css';
-import discordLogo from '../assets/discord/discord-mark-white.svg';
 
 const SiteHeader = () => {
     return (
