@@ -19,7 +19,7 @@ devDependencies:
     version: 0.13.2
   '@types/react-swipeable-views-utils':
     specifier: ^0.13.4
-    version: 0.13.4
+    version: 0.13.7
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.0.0
     version: 7.0.1(@typescript-eslint/parser@7.0.1)(eslint@8.49.0)(typescript@5.2.2)
@@ -764,8 +764,8 @@ packages:
       '@types/react': 18.2.22
     dev: true
 
-  /@types/react-swipeable-views-utils@0.13.4:
-    resolution: {integrity: sha512-v0nDk6mMIPAu/kaEnqQpDz2Z7O8ewqy2in7xwobcAAkUKKsdw3MSWFW1BkQ+dPgTrBnj/KXUzx3ZIS6UYviwyA==}
+  /@types/react-swipeable-views-utils@0.13.7:
+    resolution: {integrity: sha512-ED8pf8dq3S79uWtP8EnSdrg7dUCrxyL9Uapq1dSA2mz+H83SjS8vsqmlFWmmBQoTuEHsQp5Ru9fxxsofQ+bI9Q==}
     dependencies:
       '@material-ui/types': 4.1.1
       '@types/react': 18.2.22
