@@ -16,7 +16,7 @@ devDependencies:
     version: 18.2.7
   '@types/react-swipeable-views':
     specifier: ^0.13.2
-    version: 0.13.2
+    version: 0.13.5
   '@types/react-swipeable-views-utils':
     specifier: ^0.13.4
     version: 0.13.4
@@ -769,11 +769,11 @@ packages:
     dependencies:
       '@material-ui/types': 4.1.1
       '@types/react': 18.2.22
-      '@types/react-swipeable-views': 0.13.2
+      '@types/react-swipeable-views': 0.13.5
     dev: true
 
-  /@types/react-swipeable-views@0.13.2:
-    resolution: {integrity: sha512-FiszBm9M0JicAgzO/IwDqpfHQRUEjPZA88UexYsVD6qHJBf5LrbGjR5Mw4+yZbf8ZxJneNqOsZbe4WGjOYG7iQ==}
+  /@types/react-swipeable-views@0.13.5:
+    resolution: {integrity: sha512-ni6WjO7gBq2xB2Y/ZiRdQOgjGOxIik5ow2s7xKieDq8DxsXTdV46jJslSBVK2yoIJHf6mG3uqNTwxwgzbXRRzg==}
     dependencies:
       '@types/react': 18.2.22
     dev: true
