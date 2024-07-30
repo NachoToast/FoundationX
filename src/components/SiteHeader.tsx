@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import discordLogo from '../assets/discord/discord-mark-white.svg';
 import siteLogo from '../assets/logo.png';
 import './SiteHeader.css';
 
 const SiteHeader = () => {
+    useEffect(() => {
+        window.location.replace('https://new.foundationxservers.com');
+    }, []);
+
     return (
         <div
             style={{
