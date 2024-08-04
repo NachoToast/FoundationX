@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@fontsource/roboto':
     specifier: ^5.0.8
-    version: 5.0.8
+    version: 5.0.14
   '@types/react':
     specifier: ^18.2.22
     version: 18.2.22
@@ -569,8 +569,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/roboto@5.0.8:
-    resolution: {integrity: sha512-XxPltXs5R31D6UZeLIV1td3wTXU3jzd3f2DLsXI8tytMGBkIsGcc9sIyiupRtA8y73HAhuSCeweOoBqf6DbWCA==}
+  /@fontsource/roboto@5.0.14:
+    resolution: {integrity: sha512-zHAxlTTm9RuRn9/StwclFJChf3z9+fBrOxC3fw71htjHP1BgXNISwRjdJtAKAmMe5S2BzgpnjkQR93P9EZYI/Q==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.11:
