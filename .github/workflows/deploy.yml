@@ -27,7 +27,7 @@ jobs:
                   port: ${{ secrets.PORT }}
                   script: |
                       cd ${{ secrets.DIRECTORY }}
-                      git fetch --quiet
                       git reset --hard
                       git clean -d --force --quiet
+                      git pull --quiet
                       docker compose up --build --detach
