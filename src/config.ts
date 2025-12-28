@@ -12,9 +12,7 @@ export const config = {
 
 	api: {
 		/** The port that the API will listen to HTTP requests on. */
-		port: readFromEnv("API_PORT", (port) =>
-			port.hasDefaultValueOf("5000").mustBeInteger().withinValidPortRange(),
-		),
+		port: readFromEnv("API_PORT", (port) => port.hasDefaultValueOf("5000").isPort()),
 
 		/**
 		 * Number of proxies (Cloudflare, NGINX, etc.) between the server and clients, rate
@@ -40,12 +38,6 @@ export const config = {
 
 		password: readFromEnv("DB_PASSWORD", (password) => password.isRequired()),
 
-		port: readFromEnv("DB_PORT", (port) =>
-			port
-				.isRequired()
-				.customTransform((x) => x.split(":").at(-1) ?? x)
-				.mustBeInteger()
-				.withinValidPortRange(),
-		),
+		port: readFromEnv("DB_PORT", (port) => port.isRequired().isPort()),
 	},
 } as const;

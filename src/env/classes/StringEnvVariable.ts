@@ -54,4 +54,17 @@ export class StringEnvVariable extends KnownEnvVariable<string> {
 	public isNullable(): KnownEnvVariable<string | null> {
 		return new KnownEnvVariable(this.key, this.value || null);
 	}
+
+	/**
+	 * Parses and validates a port, which can either be the number directly or a mapped port (which
+	 * are used by Docker).
+	 *
+	 * @example "5000"
+	 * @example "3000:5000" // Port 3000 on the host machine, port 5000 in the container.
+	 */
+	public isPort(): NumericEnvVariable {
+		return this.customTransform((x) => x.split(":").at(-1) ?? x)
+			.mustBeInteger()
+			.withinValidPortRange();
+	}
 }
