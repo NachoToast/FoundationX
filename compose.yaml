@@ -26,5 +26,10 @@ services:
         mem_reservation: ${SOFT_MEMORY_LIMIT}
         depends_on:
             - db
+        environment:
+            # localhost (or whatever PostgresSQL's address actually is cannot
+            # be addressed directly from inside a container, instead we address
+            # its container.
+            - DB_HOST=db
 volumes:
     data: {}
