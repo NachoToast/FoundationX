@@ -30,6 +30,7 @@ This assumes you have [git](https://git-scm.com/), [Bun](https://bun.com/get), a
 
 ```sh
 git clone https://github.com/NachoToast/FoundationX.git
+cd FoundationX
 bun install
 cp .env.example .env
 ```
