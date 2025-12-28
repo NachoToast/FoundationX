@@ -5,7 +5,7 @@ import { colorize } from "./colorize";
 export function log(message: string, ...rest: unknown[]): void {
 	const timestamp = new Date().toLocaleString("en-NZ");
 
-	console.log(`[${timestamp}] ${message}`, ...rest);
+	console.log(`[${timestamp}] ${message}${rest.length > 0 ? "\n" : ""}`, ...rest);
 }
 
 export function logWithTimeTaken(message: string, startTime: number): void {

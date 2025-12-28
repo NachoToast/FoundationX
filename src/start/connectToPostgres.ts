@@ -36,13 +36,13 @@ export async function connectToPostgres(): Promise<void> {
 			logWithTimeTaken("Connected to PostgreSQL", startedAt);
 		},
 
-		onclose: (): void => {
+		onclose: (error: Error | null): void => {
 			switch (connectionStatus) {
 				case ConnectionStatus.Attempting:
-					log(colorize("Failed to connect to PostgreSQL", Color.FgRed));
+					log(colorize("Failed to connect to PostgreSQL", Color.FgRed), error);
 					break;
 				case ConnectionStatus.Connected:
-					log(colorize("Disconnected from PostgreSQL", Color.FgRed));
+					log(colorize("Disconnected from PostgreSQL", Color.FgRed), error);
 					break;
 				default:
 					return;
@@ -56,5 +56,9 @@ export async function connectToPostgres(): Promise<void> {
 
 	setPg(pg);
 
-	await pg.connect();
+	try {
+		await pg.connect();
+	} catch (error) {
+		console.log("uh oh", error);
+	}
 }
