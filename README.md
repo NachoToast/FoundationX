@@ -2,6 +2,11 @@
 
 Centralised API for the FoundationX server network.
 
+[![codecov](https://codecov.io/gh/NachoToast/FoundationX/graph/badge.svg?token=IQMMONOGJ8)](https://codecov.io/gh/NachoToast/FoundationX)
+[![CI](https://github.com/NachoToast/FoundationX/actions/workflows/ci.yml/badge.svg)](https://github.com/NachoToast/FoundationX/actions/workflows/ci.yml)
+[![Deploy](https://github.com/NachoToast/FoundationX/actions/workflows/deploy.yml/badge.svg)](https://github.com/NachoToast/FoundationX/actions/workflows/deploy.yml)
+[![CodeQL](https://github.com/NachoToast/FoundationX/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/NachoToast/FoundationX/actions/workflows/codeql-analysis.yml)
+
 ### Table of Contents <!-- omit in toc -->
 
 - [Technologies](#technologies)
@@ -13,36 +18,18 @@ Centralised API for the FoundationX server network.
 
 ### Technologies
 
-<div style="display: flex">
-
-  <a href="https://bun.com/">
-    <img alt="Bun" src="https://img.shields.io/badge/Bun-000?style=for-the-badge&logo=bun&logoColor=white" />
-  </a>
-
-  <a href="https://www.typescriptlang.org/">
-    <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  </a>
-
-  <a href="https://expressjs.com/">
-    <img alt="Express.js" src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=fff&style=for-the-badge">
-  </a>
-
-  <a href="https://www.postgresql.org/">
-    <img alt="PostgreSQL" src="https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white">
-  </a>
-
-  <a href="https://www.docker.com/">
-    <img alt="Docker" src="https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white">
-  </a>
-
-</div>
+[![Bun](https://img.shields.io/badge/Bun-000?style=for-the-badge&logo=bun&logoColor=white)](https://bun.com/)
+[![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=fff&style=for-the-badge)](https://expressjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
 ### Installation
 
 This assumes you have [git](https://git-scm.com/), [Bun](https://bun.com/get), and [Docker](https://www.docker.com/products/docker-desktop/) installed already.
 
 ```sh
-git clone TODO
+git clone https://github.com/NachoToast/FoundationX.git
 bun install
 cp .env.example .env
 ```
@@ -77,9 +64,13 @@ Overall architecture is outlined in the [developer Figma design document](https:
 
 #### Dependency Reference
 
+- `cors` - CORS policy management for routes.
 - `discord.js` - Discord bot API library, used by our main bot and stats bots.
 - `express` - Web server library, hosts routes.
+- `express-openapi-validator` - API request and response validation.
 - `express-rate-limit` - Rate limiting for API routes.
+- `jsonwebtoken` - Session management helper.
+- `swagger-ui-express` - Standard spec definitions and `/api-docs` route.
 
 #### Secret Reference
 
