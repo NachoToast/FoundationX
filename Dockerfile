@@ -18,5 +18,5 @@ COPY . .
 
 # Run API
 USER bun
-ENTRYPOINT [ "bun", "run", "start" ]
+ENTRYPOINT [ "bun", "." ]
 
