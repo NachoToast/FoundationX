@@ -57,7 +57,7 @@ export class StringEnvVariable extends KnownEnvVariable<string> {
 
 	/**
 	 * Parses and validates a port, which can either be the number directly or a mapped port (which
-	 * are used by Docker).
+	 * is used by Docker).
 	 *
 	 * @example "5000"
 	 * @example "3000:5000" // Port 3000 on the host machine, port 5000 in the container.

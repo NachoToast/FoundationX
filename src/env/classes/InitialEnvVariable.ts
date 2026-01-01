@@ -48,8 +48,4 @@ export class InitialEnvVariable extends BaseEnvVariable {
 
 		return new StringEnvVariable(this.key, this.value);
 	}
-
-	public specialDefaultSetter(fn: () => string): StringEnvVariable {
-		return this.hasDefaultValueOf(fn());
-	}
 }
